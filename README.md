@@ -1,1 +1,1 @@
-# zerobase_FINAL_project
+# [이커머스/NLP/DL] 명품 커머스의 VoC 분석과 분류 모델 개발
