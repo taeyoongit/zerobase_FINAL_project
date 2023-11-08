@@ -1,5 +1,20 @@
 # [이커머스/NLP/DL] 명품 커머스의 VoC 분석과 분류 모델 개발
 
+## 목차
+
+### 📖 Introduction
+
+### 🔧 문제 정의
+
+### 📎 데이터 수집 및 전처리
+
+### 💡 EDA
+
+### 🤖 모델링
+
+### 📊 활용 방안
+
+
 ## 📖 Introduction
 
 - __프로젝트 개요 :__ 최근 온라인 명품 시장의 성장세가 두드러지며 경쟁이 심화되고 있음. VoC(고객의 소리)는 상품/서비스의 전반적인 유저 평가를 파악할 수 있는 중요한 수단으로 경영 전략에 활용할 수 있음. 명품 커머스 플랫폼(머스트잇, 발란, 트렌비)의 VoC를 분석하여 현황을 파악하고, 분류 모델을 개발하여 VoC 분류 서비스를 제안하고자 함.
@@ -69,11 +84,34 @@
 
 ## 🤖 모델링
 
+
 ### 🔹 KoBERT
 
 ![](https://velog.velcdn.com/images/hsty94/post/e60d1b42-0902-4834-b0ac-0bc75346862e/image.png)
 
 ➡️ 리뷰에서 감성 클래스별 비율이 긍정 9 : 부정 1 로 클래스 불균형이 심한 편이었음. 또한 전체 확보한 리뷰 데이터가 전처리 후 약 13000개 정도로 모델을 학습 시키기에 다소 적은 양이라고 판단되었음. 따라서 적은 양의 데이터로도 좋은 성능을 낼 수 있도록, Pre-trained BERT 모델인 KoBERT 모델을 활용하여 확보한 데이터셋을 Fine-tunning 하는 전이학습을 진행하기로 결정하였음.
 
-...
+
+### 🔹 카테고리 분류 모델
+
+![](https://velog.velcdn.com/images/hsty94/post/cb9350a7-5c45-421b-b1b8-184011981414/image.png)
+
+
+### 🔹 감성 분류 모델
+
+![](https://velog.velcdn.com/images/hsty94/post/8ed278a8-5ca3-431c-b6a9-ee2ccb8fed0e/image.png)
+
+
+### 🔹 최종 모델링 결과
+
+![](https://velog.velcdn.com/images/hsty94/post/4e7a2c45-69ea-4c40-a562-2d937c132090/image.png)
+
+
+## 📊 활용 방안
+
+### 🔹 VoC 분류 서비스 제안 [(Tableau Public)](https://public.tableau.com/app/profile/taeyoon.kwon/viz/VoC_16967691310840/VoC?publish=yes)
+
+![](https://velog.velcdn.com/images/hsty94/post/ead683a8-ca10-426b-b7ae-29e0b848e711/image.png)
+
+➡️ 실시간으로 VoC의 카테고리를 분류하고 대시보드화, 유저들의 상품/서비스에 대한 평가 현황을 확인
 
